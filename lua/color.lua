@@ -13,7 +13,8 @@ M.Color = {}
 M.TmuxColor = {}
 
 ---@class VimColor
----@field index integer? The index of the TmuxColor in the colors array.
+---@field name string The index of the TmuxColor in the colors array.
+---@field hex string The color of the highlight group name or custom color.
 ---@field hl_group_name string The the highlight group name of the color in vim.
 ---@field event string The name of the event that when triggered, updates the color in tmux.
 M.VimColor = {}
