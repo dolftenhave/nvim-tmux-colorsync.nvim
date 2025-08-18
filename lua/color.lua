@@ -7,7 +7,7 @@ local M = {}
 M.Color = {}
 
 ---@class TmuxColor
----@field hex string? The hex value of the color.
+---@field hex string The hex value of the color.
 ---@field default string The value of the color when it was first read.
 ---@field name string The name of the color that will be updated in the colors.conf file.
 M.TmuxColor = {}
