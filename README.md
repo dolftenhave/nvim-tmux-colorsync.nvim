@@ -1,4 +1,6 @@
 # nvim-tmux-colorsync
+[![nvim][nvim]](https://neovim.io/)
+[![tmux][tmux]](https://github.com/tmux/tmux/wiki)
 
 ![Preview](https://i.imgur.com/I7Qq2FA.gif)
 
@@ -184,3 +186,6 @@ local color_sync = require("nvim-tmux-colorsync").setup({
 ## Planned-Features
 
 - Live updating of tmux accent colours to match nvim (eg. when changing modes in nvim).
+
+[nvim]:https://img.shields.io/badge/Neovim-Neovim?style=flat&logo=Neovim&logoColor=%2357A143&color=%23000000
+[tmux]:https://img.shields.io/badge/tmux-tmux?style=flat&logo=tmux&logoColor=%231BB91F&color=%23000000
