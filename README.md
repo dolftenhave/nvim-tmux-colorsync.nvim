@@ -19,7 +19,13 @@ This plugin aims to make it easier to match tmux colors after nvim state changes
 Using [lazy.nvim](https://github.com/folke/lazy.nvim)
 
 ```lua
-"dolftenhave/nvim-tmux-colorsync"
+-- For inline instilation
+"dolftenhave/nvim-tmux-colorsync",
+
+-- For per file instilation
+return{
+	"dolftenhave/nvim-tmux-colorsync",
+}
 ```
 
 ## Config
@@ -28,7 +34,8 @@ Using [lazy.nvim](https://github.com/folke/lazy.nvim)
 
 This is an explanation of what each setting does. If you want to see a working example, please see the [Example Implementation](#Example-Implementation).
 
-**Important!** Many of these settings are default. You do not need to set them unless you want to change them. 
+> [!IMPORTANT]
+> Many of these settings are default. You DO NOT need to set them unless you want to change them. 
 
 ```lua
 require{
@@ -102,7 +109,7 @@ require{
 
 ### Example-Implementation
  
-This example updates parts of the status bar every time neovim changes mode, like in the preview video at the top. It sources it's colors from lualine components.
+This example updates parts of the status bar every time neovim changes mode. Like in the preview video at the top, the plugin sources it's colors from lualine components.
 
 ```lua
 local color_sync = require("nvim-tmux-colorsync").setup({
@@ -176,4 +183,4 @@ local color_sync = require("nvim-tmux-colorsync").setup({
 ```
 ## Planned-Features
 
-- Live updating of tmux accent colours to math nvim (eg. when changing modes in nvim).
+- Live updating of tmux accent colours to match nvim (eg. when changing modes in nvim).
